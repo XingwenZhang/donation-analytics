@@ -4,6 +4,8 @@ Python3
 
 
 
+
+
 ### Command
 
 in the **root** directory to run the **project**:
@@ -21,6 +23,8 @@ bash run_unittest.sh
 
 
 
+
+
 ### Assumption
 
 I discard the record line which contain negative donation amount.
@@ -35,9 +39,13 @@ Where the amount is **-2300**, a negative value. I think the donation should be 
 
 
 
+
+
 ### Method
 
-##### Streaming Percentile
+
+
+#### Streaming Percentile
 
 I use two **heaps** to compute the streaming percentile, one **max heap** and one **min heap**. 
 
@@ -47,7 +55,9 @@ Finally, update the percentile value.
 
 
 
-##### Repeat Donors and Specific Donation Target
+
+
+#### Repeat Donors and Specific Donation Target
 
 Specific donor is the combination of name and zip code. Donation target is the combination of recipient, zip code and year.
 
@@ -55,7 +65,9 @@ I use **namedtuple** to store them, then insert into **dict** to make use of has
 
 
 
-##### Record Processing
+
+
+#### Record Processing
 
 In order to **avoid** the **hard code** of location, e.g recipient is line[0], I use **namedtuple** to access the property.
 
@@ -69,9 +81,21 @@ recipient_id = RecordLine(record).recipient
 
 
 
-##### Round up
+
+
+#### Round up
 
 Use **Decimal** and **ROUND_HALF_UP** to achieve 0.5 or more round to 1.
+
+
+
+
+
+### Author
+
+Xingwen Zhang, xingwenz@usc.edu
+
+
 
 
 
