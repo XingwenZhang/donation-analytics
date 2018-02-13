@@ -18,7 +18,7 @@ in the **root** directory to run the **unit test**:
 
 ```bash
 cd src
-bash run_unittest.sh
+bash run_unittest.sh 
 ```
 
 
