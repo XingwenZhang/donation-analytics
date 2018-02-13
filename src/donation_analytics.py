@@ -1,20 +1,8 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
-# In[2]:
-
-
 import argparse
 from FEC_individual_contribution_processor import FECIndividualContributionProcessor
-
-
-# In[ ]:
-
-# PERCENTILE_FILE_PATH = '../input/percentile.txt'
-# ITCONT_FILE_PATH = '../input/itcont.txt'
-# OUTPUT_FILE_PATH = '../output/repeat_donors.txt'
-
-# In[ ]:
 
 def main():
     parser = argparse.ArgumentParser(description='parse input files and output file')

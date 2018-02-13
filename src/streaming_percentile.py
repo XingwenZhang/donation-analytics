@@ -1,8 +1,6 @@
 
 # coding: utf-8
 
-# In[ ]:
-
 import math
 from min_max_heap import MinHeap, MaxHeap
 
@@ -10,13 +8,6 @@ from min_max_heap import MinHeap, MaxHeap
 # Reference: https://www.geeksforgeeks.org/median-of-stream-of-running-integers-using-stl/
 # Reference: https://en.wikipedia.org/wiki/Percentile
 
-
-# In[ ]:
-
-
-
-
-# In[ ]:
 
 class StreamingPercentile(object):
     '''

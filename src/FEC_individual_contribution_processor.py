@@ -1,7 +1,6 @@
 
 # coding: utf-8
 
-# In[33]:
 import datetime
 from collections import namedtuple
 from decimal import Decimal, ROUND_HALF_UP
@@ -9,7 +8,6 @@ from decimal import Decimal, ROUND_HALF_UP
 from streaming_percentile import StreamingPercentile
 
 
-# In[35]:
 
 Donor = namedtuple('Donor',['name', 'zip'])
 DonationTarget = namedtuple('DonationTarget', ['recipient', 'zip', 'year'])
@@ -37,20 +35,7 @@ def convert_str_to_int_or_float(string_amount):
         return int(string_amount)
     except ValueError:
         return float(string_amount)
-# In[37]:
 
-# test = namedtuple('test',['p1','p2'])
-# b = [1,2]
-# c = test(*b)
-
-# res = get_date('03212018')
-# print(res.year)
-
-# res = string_to_date('03212017')
-# print(res)
-
-
-# In[ ]:
 
 class FECIndividualContributionProcessor(object):
     '''
@@ -96,8 +81,6 @@ class FECIndividualContributionProcessor(object):
         # Check validation
         if record.other or (not date_of_transaction) or len(record.zip) < VALID_ZIP_LENGTH or (not record.name) or (not record.recipient) or (not record.amount):
             return None
-        
-        # record.zip = record.zip[:VALID_ZIP_LENGTH]
         
         donor = Donor(record.name, record.zip[:VALID_ZIP_LENGTH])
         

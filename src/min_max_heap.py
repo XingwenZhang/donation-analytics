@@ -1,18 +1,8 @@
-
 # coding: utf-8
-
-# In[5]:
 
 import heapq
 
-
-# In[6]:
-
-
 # Reference: https://stackoverflow.com/questions/2501457/what-do-i-use-for-a-max-heap-implementation-in-python
-
-
-# In[7]:
 
 class MaxHeapObj(object):
     def __init__(self,val): self.val = val
