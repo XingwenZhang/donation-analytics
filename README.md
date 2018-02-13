@@ -31,7 +31,7 @@ I discard the record line which contain negative donation amount.
 
 For example, in 2015-2016 individual donation dataset, the file itcont_2016_10151005_20150726.txt's 1906th line contains:
 
-```python
+```bash
 C00195065|N|Q1|P|15970348749|15|IND|MITCHELL, KEVIN|DALLAS|TX|75251|SHOWBIZ CINEMAS|CHIEF EXECUTIVE OFFICER|03062015|-2300||0093019|1003390|||4042020151242038316
 ```
 
